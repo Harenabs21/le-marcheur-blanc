@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class ElementCarte {
-    private final String nom;
+    protected final String nom;
 }
