@@ -13,6 +13,13 @@ public class Rue extends ElementCarte {
         this.premierLieu = lieu1;
         this.deuxiemeLieu = lieu2;
     }
+
+    public Rue(Lieu lieu1, Lieu lieu2){
+        super("");
+        this.premierLieu = lieu1;
+        this.deuxiemeLieu = lieu2;
+    }
+
     public Lieu obtenirAutreLieu(Lieu lieu) {
         if (lieu.equals(premierLieu)) {
             return deuxiemeLieu;
