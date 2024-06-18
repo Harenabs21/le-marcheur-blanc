@@ -8,10 +8,10 @@ import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import com.std22049.Carte;
-import com.std22049.Lieu;
 import com.std22049.Marcheur;
-import com.std22049.Rue;
+import com.std22049.cartes.Carte;
+import com.std22049.cartes.Lieu;
+import com.std22049.cartes.Rue;
 
 public class MarcheurTest {
     

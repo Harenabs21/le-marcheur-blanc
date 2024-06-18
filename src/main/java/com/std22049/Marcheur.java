@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.std22049.cartes.Carte;
+import com.std22049.cartes.Lieu;
+import com.std22049.cartes.Rue;
+
 import lombok.Data;
 
 @Data

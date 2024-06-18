@@ -1,4 +1,4 @@
-package com.std22049;
+package com.std22049.cartes;
 
 import java.util.ArrayList;
 import java.util.List;
