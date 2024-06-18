@@ -8,9 +8,9 @@ import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import com.std22049.Marcher;
 import com.std22049.Marcheur;
 import com.std22049.cartes.Carte;
+import com.std22049.cartes.Environnement;
 import com.std22049.cartes.Lieu;
 import com.std22049.cartes.Rue;
 
@@ -58,13 +58,15 @@ public class MarcheurTest {
          carte.ajouterRue(rue7);
          carte.ajouterRue(rue8);
          carte.ajouterRue(rue9);
+
+         // Créer l'environnement
+         Environnement env = new Environnement(carte);
  
          // Créer le marcheur
-         Marcheur bjarni = new Marcheur("Bjarni");
-         Marcher marcher = new Marcher(bjarni,carte);
+         Marcheur bjarni = new Marcheur("Bjarni",env);
  
          // Faire marcher Bjarni vers ESTI
-         List<Lieu> parcours = marcher.marcherVersDestination(HEI,ESTI);
+         List<Lieu> parcours = bjarni.marcherVersDestination(HEI,ESTI);
          // tester si la destination est ESTI
          Assertions.assertEquals(ESTI, new LinkedList<>(parcours).getLast());
          assertTrue(parcours.contains(Balancoire));
