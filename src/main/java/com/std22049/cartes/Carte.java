@@ -20,6 +20,8 @@ public class Carte {
 
     public void ajouterRue(Rue rue) {
         rues.add(rue);
+        rue.getPremierLieu().ajouterRue(rue);
+        rue.getDeuxiemeLieu().ajouterRue(rue);
     }
 
     public List<Rue> obtenirRuesDisponible(Lieu lieu) {
